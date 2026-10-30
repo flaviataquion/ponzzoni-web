@@ -1,19 +1,25 @@
-# Ponzzoni · Boceto responsive y CRO
+# Ponzzoni · Landing y pedidos por WhatsApp
 
 Implementación estática sin dependencias de ejecución, preparada para GitHub y Vercel. Diseño de referencia: https://www.figma.com/design/KD3QzBkkfitB67suNxWORf?node-id=92-140
 
 ## Uso
 
 - `node server.mjs` sirve la vista local en http://127.0.0.1:4173
-- `node --test tests/*.test.mjs` verifica totales, horarios, mensaje y bloqueo de pedidos de ejemplo.
+- `node --test tests/*.test.mjs` verifica carta, totales, horarios, sabores y mensaje de WhatsApp.
 - `node scripts/build.mjs` genera `dist/`.
 - En Vercel: framework Other, build `node scripts/build.mjs`, output `dist`. La configuración ya está en `vercel.json`.
 
-## Estado del boceto
+## Carta y estado del pedido
 
-La landing, navegación móvil, mapa, consultas de WhatsApp y simulación del pedido son interactivos. `public/order.js` concentra carta y configuración. `menuReady: false` bloquea el envío de productos/precios de ejemplo; las consultas normales al WhatsApp real sí están habilitadas. No se almacena teléfono, dirección ni notas en el navegador; solo cantidades. No hay un backend de recepción ni confirmación: la confirmación real ocurre en el chat.
+La landing, navegación móvil, mapa y pedido son interactivos. `public/menu.js` contiene 82 productos de la carta indicada por el comercio, consultada el 30/10/2026: https://www.orderar.com/restaurant/mesa.php?oa=V74dd996_75d12ee6 . Se excluyeron Comidas Peruanas. Los adicionales de $0 se integran como sabores de empanadas, sin venderse ni cobrarse como productos separados. Se conservan las cinco promociones, pizzas clásicas/especiales/rellenas, la especial Ponzzoni, empanadas, calzones, fainá, sándwich de milanesa, milanesas para compartir y bastones de pollo.
 
-Antes de admitir pedidos: cargar carta y precios definitivos, confirmar variantes/disponibilidad, cobertura y pedido mínimo, validar contenido/fotos ilustrativas con el comercio y luego cambiar `menuReady` a `true`. Para permitir indexación, retirar el noindex tanto del HTML como del header X-Robots-Tag de Vercel. Añadir dominio y URL canónica cuando exista. Las promos no se muestran hasta tener una oferta real.
+El comercio autorizó provisoriamente $10.000 para Sanguche de Milanesas, Variedad en Milanesas Para Compartir y Bastones de Pollo con Guarnición de Papas. Se identifican con `provisionalPrice: true`, visibles en carta, revisión y mensaje. Actualizar esos tres importes cuando se confirmen; los restantes precios proceden de la fuente. Las medias docenas, docenas y promos con empanadas requieren elegir exactamente 6/12 sabores por combo, multiplicados por la cantidad elegida.
+
+`public/order.js` concentra la configuración, con `menuReady: true`. El botón abre WhatsApp con un borrador para que el cliente lo envíe; no envía mensajes por API ni registra una compra como confirmada. La confirmación de recepción, disponibilidad, total y demora ocurre en el chat. Solo se guardan cantidades y sabores en el navegador; teléfono, dirección y notas no se almacenan.
+
+Delivery propio gratis en un radio de 2 km desde Coucheiro 213, Villa Sarmiento. Se muestra en landing, formulario, revisión y mensaje. No hay geocodificación ni validación automática de distancia: el local confirma la cobertura de la dirección por WhatsApp. Take away no requiere dirección.
+
+Se conserva `noindex` del boceto. Al lanzar la URL definitiva, retirar el noindex del HTML y del header X-Robots-Tag de Vercel, y añadir dominio y URL canónica.
 
 ## Mejoras de conversión aplicadas
 
@@ -37,6 +43,6 @@ Fotos y logos corresponden a los recursos descargados del diseño aprobado. Cré
 
 ## Verificación
 
-Seis pruebas de lógica pasaron. Se verificó en Chrome aislado: anchos 320, 375, 390, 768, 1024 y 1440 px sin desborde horizontal; menú móvil, cantidades, dirección condicional, indicaciones, horario programado, revisión editable, retiro y bloqueo del envío de prueba. Sin errores JavaScript. Capturas en `qa/`. El mapa es un recurso externo; siempre hay un enlace independiente «Cómo llegar».
+Nueve pruebas de lógica pasaron. Se verificó en Chrome aislado: anchos 320, 375, 390, 768, 1024 y 1440 px sin desborde horizontal; menú móvil, cantidades, dirección condicional, indicaciones, horario programado, revisión editable, retiro y elección obligatoria de sabores. El enlace final de WhatsApp se interceptó para comprobar el borrador sin enviar mensajes. Sin errores JavaScript. Capturas en `qa/`. El mapa es un recurso externo; siempre hay un enlace independiente «Cómo llegar».
 
 `scripts/verify-browser.mjs` puede ejecutarse con Playwright disponible y el servidor iniciado. Para usar una instalación existente, definir `QA_PLAYWRIGHT_PATH` con la ruta absoluta a `playwright/index.mjs` y `QA_CHROME_PATH` con el ejecutable de Chrome. No envía mensajes ni pedidos.
