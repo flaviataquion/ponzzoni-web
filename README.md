@@ -40,4 +40,3 @@ Fotos y logos corresponden a los recursos descargados del diseño aprobado. Cré
 Seis pruebas de lógica pasaron. Se verificó en Chrome aislado: anchos 320, 375, 390, 768, 1024 y 1440 px sin desborde horizontal; menú móvil, cantidades, dirección condicional, indicaciones, horario programado, revisión editable, retiro y bloqueo del envío de prueba. Sin errores JavaScript. Capturas en `qa/`. El mapa es un recurso externo; siempre hay un enlace independiente «Cómo llegar».
 
 `scripts/verify-browser.mjs` puede ejecutarse con Playwright disponible y el servidor iniciado. Para usar una instalación existente, definir `QA_PLAYWRIGHT_PATH` con la ruta absoluta a `playwright/index.mjs` y `QA_CHROME_PATH` con el ejecutable de Chrome. No envía mensajes ni pedidos.
-
