@@ -23,6 +23,9 @@ assert.equal(await page.locator('.menu-toggle').getAttribute('aria-expanded'),'t
 await page.locator('#navigation a').first().click();
 assert.equal(await page.locator('.menu-toggle').getAttribute('aria-expanded'),'false');
 await page.locator('.mobile-cta .order-open').click();
+assert.equal(await page.locator('#categories button').first().innerText(),'Promociones');
+assert.equal(await page.locator('#categories button').first().getAttribute('aria-pressed'),'true');
+await page.locator('#categories').getByRole('button',{name:'Pizzas clásicas',exact:true}).click();
 await page.getByRole('button',{name:'Sumar Muzzarella',exact:true}).click();
 assert.match(await page.locator('#selection-count').innerText(),/1 producto/);
 await page.getByRole('button',{name:'Continuar con entrega y datos'}).click();

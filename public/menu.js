@@ -7,7 +7,7 @@ export const menuSource={
   ],
   "notes": "Los adicionales de $0 son opciones de sabores, no productos independientes. El comercio autorizó $10.000 provisorios para los tres productos publicados a $1."
 };
-export const categories=["Pizzas clásicas", "Pizzas especiales", "Pizzas rellenas", "Empanadas", "Calzones", "Sandwiches", "Fainá", "Milanesas", "Bastones de pollo", "Promociones"];
+export const categories=["Promociones", "Pizzas clásicas", "Pizzas especiales", "Pizzas rellenas", "Empanadas", "Calzones", "Sandwiches", "Fainá", "Milanesas", "Bastones de pollo"];
 export const products=[
   {
     "id": "orderar-1",
