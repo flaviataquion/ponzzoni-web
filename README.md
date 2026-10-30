@@ -39,7 +39,7 @@ Se emiten eventos propios `ponzzoni:conversion` en `window`, sin datos personale
 
 ## Recursos
 
-Fotos y logos corresponden a los recursos descargados del diseño aprobado. Créditos de fotografías: Nano Erdozain (Pexels 28945115), Arthur Brognoli (3343624), Eneida Nieves (905847), Airam Dato-on (9471598). Poggio en curvas para la marca; DM Sans y Archivo Black para textos.
+Las fotos actuales de muzzarella, napolitana y empanadas y los logos PNG blanco, rojo y negro fueron proporcionados por el comercio. Los PNG conservan sus colores, transparencia y proporciones; solo se quitó el margen transparente derecho para alinear la marca. Las fotos se codificaron en WebP con variantes responsive. Se conservaron las imágenes de horno del diseño aprobado. Créditos de los recursos originales de Figma que permanecen en el proyecto: Nano Erdozain (Pexels 28945115), Arthur Brognoli (3343624), Eneida Nieves (905847), Airam Dato-on (9471598). DM Sans y Archivo Black para textos.
 
 ## Verificación
 
