@@ -29,3 +29,23 @@
 .review-card figcaption { margin-top: auto; }
 .review-card .text-link { display: inline; line-height: 1.7; }
 .review-source { color: var(--muted); font-weight: 400; }
+
+.padrino-promo {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 24px;
+  padding: clamp(24px, 5vw, 56px);
+  border-radius: var(--radius);
+  background: var(--ink);
+  color: var(--cream);
+}
+
+.padrino-promo .eyebrow { margin-bottom: 8px; }
+.padrino-promo h2 { margin: 0; }
+.padrino-promo .button { max-width: 100%; text-align: center; }
+
+@media (max-width: 767px) {
+  .padrino-promo .button { width: 100%; }
+}
