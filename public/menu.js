@@ -5,7 +5,7 @@ export const menuSource={
   "excludedCategories": [
     "Comidas Peruanas"
   ],
-  "notes": "Los adicionales de $0 son opciones de sabores, no productos independientes. El comercio autorizó $10.000 provisorios para los tres productos publicados a $1."
+  "notes": "Los adicionales de $0 son opciones de sabores, no productos independientes. Los precios de las milanesas y del sánguche fueron confirmados por el comercio el 2026-11-11. El precio de los bastones de pollo sigue siendo provisorio."
 };
 export const categories=["Promociones", "Pizzas clásicas", "Pizzas especiales", "Pizzas rellenas", "Empanadas", "Calzones", "Sandwiches", "Fainá", "Milanesas", "Bastones de pollo"];
 export const products=[
@@ -647,21 +647,35 @@ export const products=[
   },
   {
     "id": "orderar-800",
-    "name": "Sanguche de Milanesas",
+    "name": "Sánguche de milanesa",
     "category": "Sandwiches",
+    "description": "Milanesa con jamón, queso, tomate y lechuga en pan casero.",
+    "price": 12000,
+    "unit": ""
+  },
+  {
+    "id": "milanesa-napolitana-individual",
+    "name": "Milanesa napolitana con guarnición",
+    "category": "Milanesas",
     "description": "",
-    "price": 10000,
-    "unit": "",
-    "provisionalPrice": true
+    "price": 12000,
+    "unit": "Porción individual"
+  },
+  {
+    "id": "milanesa-jamon-queso-individual",
+    "name": "Milanesa de jamón y queso con guarnición",
+    "category": "Milanesas",
+    "description": "",
+    "price": 12000,
+    "unit": "Porción individual"
   },
   {
     "id": "orderar-801",
-    "name": "Variedad en Milanesas Para Compartir",
+    "name": "Milanesas con guarnición para dos",
     "category": "Milanesas",
     "description": "",
-    "price": 10000,
-    "unit": "",
-    "provisionalPrice": true
+    "price": 22000,
+    "unit": ""
   },
   {
     "id": "orderar-900",
