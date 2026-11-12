@@ -1,6 +1,56 @@
 import {products,categories,empanadaFlavors,money,count,total,flavorsComplete} from './order.js';
 const element=(tag,text,className)=>{const e=document.createElement(tag);if(text)e.textContent=text;if(className)e.className=className;return e;};
 const chosenFlavors=new Map();
+
+const muzzarella = {file: 'pizza-muzzarella', width: 1086, title: 'Pizza de muzzarella'};
+const napolitana = {file: 'pizza-napolitana', width: 1086, title: 'Pizza napolitana'};
+const productPhotos = new Map([
+  ['orderar-1', muzzarella],
+  ['orderar-2', muzzarella],
+  ['orderar-3', napolitana],
+  ['orderar-4', napolitana],
+  ['orderar-5', muzzarella],
+  ['orderar-100', muzzarella],
+  ['orderar-107', napolitana],
+  ['orderar-700', {file: 'empanadas-abiertas', width: 1300, title: 'Empanadas de carne'}],
+  ['orderar-800', {file: 'sandwich-milanesa', width: 1254, title: 'Sánguche de milanesa'}],
+  ['orderar-900', {file: 'bocaditos-pollo', width: 1086, title: 'Bastones de pollo con papas'}],
+]);
+
+const photoDialog = document.querySelector('#menu-photo-dialog');
+photoDialog.addEventListener('click', event => {
+  if (event.target !== photoDialog) return;
+  const rect = photoDialog.getBoundingClientRect();
+  if (event.clientX < rect.left || event.clientX > rect.right ||
+      event.clientY < rect.top || event.clientY > rect.bottom) photoDialog.close();
+});
+
+function productThumbnail(product, photo) {
+  const title = product.category === 'Promociones'
+    ? `${photo.title} incluida en la promo`
+    : photo.title;
+  const button = element('button', '', 'product-thumbnail');
+  button.type = 'button';
+  button.setAttribute('aria-label', `Ampliar foto de ${product.name}`);
+  button.setAttribute('aria-haspopup', 'dialog');
+  const thumbnail = element('img');
+  thumbnail.src = `assets/${photo.file}-160.webp`;
+  thumbnail.alt = '';
+  thumbnail.width = 160;
+  thumbnail.height = 160;
+  thumbnail.loading = 'lazy';
+  button.append(thumbnail);
+  button.addEventListener('click', () => {
+    photoDialog.querySelector('h2').textContent = title;
+    const fullPhoto = element('img', '', 'menu-photo-full');
+    fullPhoto.alt = photo.title;
+    fullPhoto.src = `assets/${photo.file}-${photo.width}.webp`;
+    photoDialog.querySelector('.menu-photo-body').replaceChildren(fullPhoto);
+    photoDialog.showModal();
+  });
+  return button;
+}
+
 export function drawCategories(category,onSelect){
   const container=document.querySelector('#categories');container.replaceChildren();
   for(const name of categories){const b=element('button',name);b.type='button';b.setAttribute('aria-pressed',String(name===category));b.addEventListener('click',()=>onSelect(name));container.append(b);}
@@ -20,7 +70,15 @@ export function drawProducts({cart,flavors,category,changed}){
       b.setAttribute('aria-label',`${delta>0?'Sumar':'Restar'} ${p.name}`);b.disabled=delta<0?!(cart[p.id]>0):cart[p.id]>=99;
       b.addEventListener('click',()=>{cart[p.id]=Math.min(99,Math.max(0,(cart[p.id]||0)+delta));if(!cart[p.id])delete flavors[p.id];changed();});quantity.append(b);
     }
-    article.append(copy,quantity);container.append(article);
+    const photo = productPhotos.get(p.id);
+    if (photo) {
+      const details = element('div', '', 'product-details');
+      details.append(productThumbnail(p, photo), copy);
+      article.append(details, quantity);
+    } else {
+      article.append(copy, quantity);
+    }
+    container.append(article);
   }
   drawFlavors(cart,flavors,changed);
   const number=count(cart);document.querySelector('#selection-count').textContent=number?`${number} producto${number===1?'':'s'} elegido${number===1?'':'s'}`:'Sin productos elegidos';

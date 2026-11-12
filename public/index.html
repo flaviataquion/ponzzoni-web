@@ -105,5 +105,12 @@
       <section id="review" hidden><fieldset><legend>¿Cómo querés pagar?</legend><div class="choice-grid"><label class="choice"><input type="radio" name="payment" value="cash" checked><span><strong>Efectivo</strong><small>Pagás al recibir</small></span></label><label class="choice"><input type="radio" name="payment" value="transfer"><span><strong>Transferencia</strong><small>Los datos se coordinan por WhatsApp</small></span></label></div></fieldset><div class="review-box"><h3>Tu pedido</h3><ul id="review-products"></ul><button class="text-button" id="edit-products">Editar productos</button></div><div class="review-box"><h3>Entrega y contacto</h3><p id="review-data"></p><button class="text-button" id="edit-delivery">Editar datos</button></div><div class="review-totals"><span>Productos</span><strong id="review-total"></strong><span id="shipping-label">Envío</span><strong id="shipping-value">Gratis</strong></div><p class="inline-note">Ponzzoni confirma disponibilidad, cobertura de entrega, total y demora por WhatsApp. El pedido queda confirmado cuando el local te responde.</p><button class="button full" id="send-order">Abrir WhatsApp con mi pedido</button><p class="helper">Se abrirá WhatsApp con tu pedido listo para enviar. El local lo confirma por el chat.</p><a class="text-link whatsapp" data-placement="demo-review" href="https://wa.me/5491160472484">¿Tenés alguna consulta? Escribinos</a></section>
     </div>
   </dialog>
+  <dialog class="menu-photo-dialog" id="menu-photo-dialog" aria-labelledby="menu-photo-title">
+    <form class="menu-photo-head" method="dialog">
+      <h2 id="menu-photo-title">Foto del producto</h2>
+      <button class="icon-button" type="submit" aria-label="Cerrar foto" autofocus>×</button>
+    </form>
+    <div class="menu-photo-body"></div>
+  </dialog>
 </body>
 </html>
