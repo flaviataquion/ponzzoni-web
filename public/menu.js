@@ -55,7 +55,7 @@ export const products=[
     "id": "orderar-100",
     "name": "Muzzarella",
     "category": "Pizzas clásicas",
-    "description": "",
+    "description": "Pizza de muzzarella con salsa de tomate y aceitunas verdes.",
     "price": 15000,
     "unit": ""
   },
@@ -63,7 +63,7 @@ export const products=[
     "id": "orderar-101",
     "name": "Fugazzeta",
     "category": "Pizzas clásicas",
-    "description": "",
+    "description": "Pizza de cebolla con queso.",
     "price": 16500,
     "unit": ""
   },
@@ -71,7 +71,7 @@ export const products=[
     "id": "orderar-102",
     "name": "Fugazzeta con Jamón",
     "category": "Pizzas clásicas",
-    "description": "",
+    "description": "Fugazzeta con cebolla, queso y jamón.",
     "price": 18000,
     "unit": ""
   },
@@ -79,7 +79,7 @@ export const products=[
     "id": "orderar-103",
     "name": "Fugazza",
     "category": "Pizzas clásicas",
-    "description": "",
+    "description": "Pizza clásica de cebolla.",
     "price": 15500,
     "unit": ""
   },
@@ -87,7 +87,7 @@ export const products=[
     "id": "orderar-104",
     "name": "Jamón",
     "category": "Pizzas clásicas",
-    "description": "",
+    "description": "Pizza cubierta con jamón.",
     "price": 18000,
     "unit": ""
   },
@@ -95,7 +95,7 @@ export const products=[
     "id": "orderar-105",
     "name": "Jamón y Morrones",
     "category": "Pizzas clásicas",
-    "description": "",
+    "description": "Pizza con jamón y morrones.",
     "price": 20000,
     "unit": ""
   },
@@ -103,7 +103,7 @@ export const products=[
     "id": "orderar-106",
     "name": "Jamón y Huevo",
     "category": "Pizzas clásicas",
-    "description": "",
+    "description": "Pizza con jamón y huevo.",
     "price": 20000,
     "unit": ""
   },
@@ -111,7 +111,7 @@ export const products=[
     "id": "orderar-107",
     "name": "Napolitana",
     "category": "Pizzas clásicas",
-    "description": "",
+    "description": "Pizza con rodajas de tomate y aceitunas verdes.",
     "price": 18000,
     "unit": ""
   },
@@ -119,7 +119,7 @@ export const products=[
     "id": "orderar-108",
     "name": "Napo con Jamón",
     "category": "Pizzas clásicas",
-    "description": "",
+    "description": "Pizza napolitana con rodajas de tomate y jamón.",
     "price": 20000,
     "unit": ""
   },
@@ -127,7 +127,7 @@ export const products=[
     "id": "orderar-109",
     "name": "Calabresa",
     "category": "Pizzas clásicas",
-    "description": "",
+    "description": "Pizza al estilo calabrés, de sabor intenso.",
     "price": 20500,
     "unit": ""
   },
@@ -135,7 +135,7 @@ export const products=[
     "id": "orderar-110",
     "name": "Palmitos",
     "category": "Pizzas clásicas",
-    "description": "",
+    "description": "Pizza con palmitos.",
     "price": 22000,
     "unit": ""
   },
@@ -143,7 +143,7 @@ export const products=[
     "id": "orderar-111",
     "name": "Champignon",
     "category": "Pizzas clásicas",
-    "description": "",
+    "description": "Pizza con champiñones.",
     "price": 21000,
     "unit": ""
   },
@@ -151,7 +151,7 @@ export const products=[
     "id": "orderar-112",
     "name": "Roquefort",
     "category": "Pizzas clásicas",
-    "description": "",
+    "description": "Pizza con queso roquefort, de sabor intenso.",
     "price": 20000,
     "unit": ""
   },
@@ -159,7 +159,7 @@ export const products=[
     "id": "orderar-113",
     "name": "Roquefort con Jamón",
     "category": "Pizzas clásicas",
-    "description": "",
+    "description": "Pizza con queso roquefort y jamón.",
     "price": 22000,
     "unit": ""
   },
@@ -167,7 +167,7 @@ export const products=[
     "id": "orderar-114",
     "name": "Provolone",
     "category": "Pizzas clásicas",
-    "description": "",
+    "description": "Pizza con queso provolone.",
     "price": 20000,
     "unit": ""
   },
@@ -175,7 +175,7 @@ export const products=[
     "id": "orderar-115",
     "name": "Provolone con Jamón",
     "category": "Pizzas clásicas",
-    "description": "",
+    "description": "Pizza con queso provolone y jamón.",
     "price": 22000,
     "unit": ""
   },
@@ -183,7 +183,7 @@ export const products=[
     "id": "orderar-116",
     "name": "Espinaca",
     "category": "Pizzas clásicas",
-    "description": "",
+    "description": "Pizza con espinaca.",
     "price": 19500,
     "unit": ""
   },
@@ -191,7 +191,7 @@ export const products=[
     "id": "orderar-117",
     "name": "Caprese",
     "category": "Pizzas clásicas",
-    "description": "",
+    "description": "Pizza inspirada en los sabores de la ensalada caprese.",
     "price": 18500,
     "unit": ""
   },
@@ -199,7 +199,7 @@ export const products=[
     "id": "orderar-118",
     "name": "Cuatro Quesos",
     "category": "Pizzas clásicas",
-    "description": "",
+    "description": "Pizza con una combinación de cuatro quesos.",
     "price": 20500,
     "unit": ""
   },
@@ -207,7 +207,7 @@ export const products=[
     "id": "orderar-119",
     "name": "Rúcula",
     "category": "Pizzas clásicas",
-    "description": "",
+    "description": "Pizza con rúcula.",
     "price": 20000,
     "unit": ""
   },
@@ -311,7 +311,7 @@ export const products=[
     "id": "orderar-400",
     "name": "Rellena Fugazza",
     "category": "Pizzas rellenas",
-    "description": "",
+    "description": "Pizza rellena al estilo fugazza, con cebolla.",
     "price": 20000,
     "unit": ""
   },
@@ -319,7 +319,7 @@ export const products=[
     "id": "orderar-401",
     "name": "Fugazza con jamón",
     "category": "Pizzas rellenas",
-    "description": "",
+    "description": "Fugazza rellena con cebolla y jamón.",
     "price": 21500,
     "unit": ""
   },
@@ -327,7 +327,7 @@ export const products=[
     "id": "orderar-402",
     "name": "Fugazza con provolone",
     "category": "Pizzas rellenas",
-    "description": "",
+    "description": "Fugazza rellena con cebolla y queso provolone.",
     "price": 22000,
     "unit": ""
   },
@@ -335,7 +335,7 @@ export const products=[
     "id": "orderar-403",
     "name": "Fugazza americana",
     "category": "Pizzas rellenas",
-    "description": "",
+    "description": "Pizza rellena de la línea fugazza, en la versión americana de Ponzzoni.",
     "price": 23000,
     "unit": ""
   },
@@ -343,7 +343,7 @@ export const products=[
     "id": "orderar-500",
     "name": "Calzone Napolitano",
     "category": "Calzones",
-    "description": "",
+    "description": "Masa de pizza doblada con relleno al estilo napolitano.",
     "price": 22000,
     "unit": ""
   },
@@ -351,7 +351,7 @@ export const products=[
     "id": "orderar-501",
     "name": "Calzone Calabrese",
     "category": "Calzones",
-    "description": "",
+    "description": "Masa de pizza doblada con relleno al estilo calabrés.",
     "price": 22000,
     "unit": ""
   },
@@ -359,7 +359,7 @@ export const products=[
     "id": "orderar-502",
     "name": "Calzone Espinaca",
     "category": "Calzones",
-    "description": "",
+    "description": "Masa de pizza doblada con relleno de espinaca.",
     "price": 22000,
     "unit": ""
   },
@@ -367,7 +367,7 @@ export const products=[
     "id": "orderar-503",
     "name": "Calzone Primavera",
     "category": "Calzones",
-    "description": "",
+    "description": "Masa de pizza doblada con el relleno Primavera de la casa.",
     "price": 22000,
     "unit": ""
   },
@@ -375,7 +375,7 @@ export const products=[
     "id": "orderar-504",
     "name": "Calzone Francés",
     "category": "Calzones",
-    "description": "",
+    "description": "Masa de pizza doblada con el relleno Francés de la casa.",
     "price": 22000,
     "unit": ""
   },
@@ -383,7 +383,7 @@ export const products=[
     "id": "orderar-505",
     "name": "Calzone Bacon",
     "category": "Calzones",
-    "description": "",
+    "description": "Masa de pizza doblada con relleno de panceta.",
     "price": 22000,
     "unit": ""
   },
@@ -391,7 +391,7 @@ export const products=[
     "id": "orderar-600",
     "name": "Faina Simple",
     "category": "Fainá",
-    "description": "",
+    "description": "Porción clásica a base de harina de garbanzos, para acompañar la pizza.",
     "price": 2000,
     "unit": ""
   },
@@ -399,7 +399,7 @@ export const products=[
     "id": "orderar-601",
     "name": "Faina con Jamón",
     "category": "Fainá",
-    "description": "",
+    "description": "Fainá a base de harina de garbanzos con jamón.",
     "price": 2500,
     "unit": ""
   },
@@ -407,7 +407,7 @@ export const products=[
     "id": "orderar-602",
     "name": "Fugafaina",
     "category": "Fainá",
-    "description": "",
+    "description": "Fainá al estilo fugazza, con cebolla.",
     "price": 2500,
     "unit": ""
   },
@@ -415,7 +415,7 @@ export const products=[
     "id": "orderar-700",
     "name": "Carne",
     "category": "Empanadas",
-    "description": "",
+    "description": "Empanada clásica con relleno de carne.",
     "price": 2500,
     "unit": "Por unidad"
   },
@@ -423,7 +423,7 @@ export const products=[
     "id": "orderar-701",
     "name": "Carne a cuchillo",
     "category": "Empanadas",
-    "description": "",
+    "description": "Empanada rellena de carne cortada a cuchillo.",
     "price": 2500,
     "unit": "Por unidad"
   },
@@ -431,7 +431,7 @@ export const products=[
     "id": "orderar-702",
     "name": "Carne picante",
     "category": "Empanadas",
-    "description": "",
+    "description": "Empanada con relleno de carne picante.",
     "price": 2500,
     "unit": "Por unidad"
   },
@@ -439,7 +439,7 @@ export const products=[
     "id": "orderar-703",
     "name": "Carne dulces",
     "category": "Empanadas",
-    "description": "",
+    "description": "Empanada de carne con un toque dulce.",
     "price": 2500,
     "unit": "Por unidad"
   },
@@ -447,7 +447,7 @@ export const products=[
     "id": "orderar-704",
     "name": "Pollo",
     "category": "Empanadas",
-    "description": "",
+    "description": "Empanada con relleno de pollo.",
     "price": 2500,
     "unit": "Por unidad"
   },
@@ -455,7 +455,7 @@ export const products=[
     "id": "orderar-705",
     "name": "Verdura",
     "category": "Empanadas",
-    "description": "",
+    "description": "Empanada con relleno de verduras.",
     "price": 2500,
     "unit": "Por unidad"
   },
@@ -463,7 +463,7 @@ export const products=[
     "id": "orderar-706",
     "name": "Humita",
     "category": "Empanadas",
-    "description": "",
+    "description": "Empanada con relleno de humita a base de choclo.",
     "price": 2500,
     "unit": "Por unidad"
   },
@@ -471,7 +471,7 @@ export const products=[
     "id": "orderar-707",
     "name": "Cebolla",
     "category": "Empanadas",
-    "description": "",
+    "description": "Empanada con relleno de cebolla.",
     "price": 2500,
     "unit": "Por unidad"
   },
@@ -479,7 +479,7 @@ export const products=[
     "id": "orderar-708",
     "name": "Emp. Caprese",
     "category": "Empanadas",
-    "description": "",
+    "description": "Empanada con relleno al estilo caprese.",
     "price": 2500,
     "unit": "Por unidad"
   },
@@ -487,7 +487,7 @@ export const products=[
     "id": "orderar-709",
     "name": "Cantimpalo",
     "category": "Empanadas",
-    "description": "",
+    "description": "Empanada rellena de cantimpalo.",
     "price": 2500,
     "unit": "Por unidad"
   },
@@ -495,7 +495,7 @@ export const products=[
     "id": "orderar-710",
     "name": "Atún",
     "category": "Empanadas",
-    "description": "",
+    "description": "Empanada con relleno de atún.",
     "price": 2500,
     "unit": "Por unidad"
   },
@@ -503,7 +503,7 @@ export const products=[
     "id": "orderar-711",
     "name": "Jamón y Ananá",
     "category": "Empanadas",
-    "description": "",
+    "description": "Empanada rellena de jamón y ananá.",
     "price": 2500,
     "unit": "Por unidad"
   },
@@ -511,7 +511,7 @@ export const products=[
     "id": "orderar-712",
     "name": "Jamón y Muzzarela",
     "category": "Empanadas",
-    "description": "",
+    "description": "Empanada rellena de jamón y muzzarella.",
     "price": 2500,
     "unit": "Por unidad"
   },
@@ -519,7 +519,7 @@ export const products=[
     "id": "orderar-713",
     "name": "Emp. Roquefort",
     "category": "Empanadas",
-    "description": "",
+    "description": "Empanada con relleno de queso roquefort.",
     "price": 2500,
     "unit": "Por unidad"
   },
@@ -527,7 +527,7 @@ export const products=[
     "id": "orderar-714",
     "name": "Salteado de Verduras",
     "category": "Empanadas",
-    "description": "",
+    "description": "Empanada rellena de verduras salteadas.",
     "price": 2500,
     "unit": "Por unidad"
   },
@@ -535,7 +535,7 @@ export const products=[
     "id": "orderar-715",
     "name": "Panceta y Ciruela",
     "category": "Empanadas",
-    "description": "",
+    "description": "Empanada rellena de panceta y ciruela.",
     "price": 2500,
     "unit": "Por unidad"
   },
@@ -543,7 +543,7 @@ export const products=[
     "id": "orderar-716",
     "name": "Emp. Cuatro Quesos",
     "category": "Empanadas",
-    "description": "",
+    "description": "Empanada con una mezcla de cuatro quesos.",
     "price": 2500,
     "unit": "Por unidad"
   },
@@ -551,7 +551,7 @@ export const products=[
     "id": "orderar-717",
     "name": "Carne tipo Fatay",
     "category": "Empanadas",
-    "description": "",
+    "description": "Empanada de carne al estilo fatay.",
     "price": 2500,
     "unit": "Por unidad"
   },
@@ -559,7 +559,7 @@ export const products=[
     "id": "orderar-718",
     "name": "Panceta y Chedar",
     "category": "Empanadas",
-    "description": "",
+    "description": "Empanada rellena de panceta y queso cheddar.",
     "price": 2500,
     "unit": "Por unidad"
   },
@@ -567,7 +567,7 @@ export const products=[
     "id": "orderar-719",
     "name": "Jamón y Palmito",
     "category": "Empanadas",
-    "description": "",
+    "description": "Empanada rellena de jamón y palmito.",
     "price": 2500,
     "unit": "Por unidad"
   },
@@ -575,7 +575,7 @@ export const products=[
     "id": "orderar-720",
     "name": "Panceta y Champignon",
     "category": "Empanadas",
-    "description": "",
+    "description": "Empanada rellena de panceta y champiñones.",
     "price": 2500,
     "unit": "Por unidad"
   },
@@ -583,7 +583,7 @@ export const products=[
     "id": "orderar-721",
     "name": "Carne c/ Chedar",
     "category": "Empanadas",
-    "description": "",
+    "description": "Empanada rellena de carne y queso cheddar.",
     "price": 2500,
     "unit": "Por unidad"
   },
@@ -591,7 +591,7 @@ export const products=[
     "id": "orderar-722",
     "name": "Pollo al Verdeo",
     "category": "Empanadas",
-    "description": "",
+    "description": "Empanada rellena de pollo al verdeo.",
     "price": 2500,
     "unit": "Por unidad"
   },
@@ -599,7 +599,7 @@ export const products=[
     "id": "orderar-723",
     "name": "Media Docena",
     "category": "Empanadas",
-    "description": "",
+    "description": "Elegí los sabores de las seis empanadas de tu media docena.",
     "price": 13500,
     "unit": "6 unidades",
     "flavorCount": 6
@@ -608,7 +608,7 @@ export const products=[
     "id": "orderar-724",
     "name": "Docena",
     "category": "Empanadas",
-    "description": "",
+    "description": "Elegí los sabores de las doce empanadas de tu docena.",
     "price": 27000,
     "unit": "12 unidades",
     "flavorCount": 12
@@ -617,7 +617,7 @@ export const products=[
     "id": "orderar-725",
     "name": "Emp. Roquefort con Jamón",
     "category": "Empanadas",
-    "description": "",
+    "description": "Empanada rellena de queso roquefort y jamón.",
     "price": 2500,
     "unit": "Por unidad"
   },
@@ -625,7 +625,7 @@ export const products=[
     "id": "orderar-726",
     "name": "Matambre a la Pizza",
     "category": "Empanadas",
-    "description": "",
+    "description": "Empanada con relleno de matambre preparado al estilo pizza.",
     "price": 2500,
     "unit": "Por unidad"
   },
@@ -633,7 +633,7 @@ export const products=[
     "id": "orderar-727",
     "name": "Vacío a la Provoleta",
     "category": "Empanadas",
-    "description": "",
+    "description": "Empanada rellena de vacío y provoleta.",
     "price": 2500,
     "unit": "Por unidad"
   },
@@ -641,7 +641,7 @@ export const products=[
     "id": "orderar-728",
     "name": "Bondiola a la Barbacoa",
     "category": "Empanadas",
-    "description": "",
+    "description": "Empanada rellena de bondiola con salsa barbacoa.",
     "price": 2500,
     "unit": "Por unidad"
   },
@@ -657,7 +657,7 @@ export const products=[
     "id": "milanesa-napolitana-individual",
     "name": "Milanesa napolitana con guarnición",
     "category": "Milanesas",
-    "description": "",
+    "description": "Milanesa al estilo napolitano, acompañada de guarnición.",
     "price": 12000,
     "unit": "Porción individual"
   },
@@ -665,7 +665,7 @@ export const products=[
     "id": "milanesa-jamon-queso-individual",
     "name": "Milanesa de jamón y queso con guarnición",
     "category": "Milanesas",
-    "description": "",
+    "description": "Milanesa con jamón y queso, acompañada de guarnición.",
     "price": 12000,
     "unit": "Porción individual"
   },
@@ -673,7 +673,7 @@ export const products=[
     "id": "orderar-801",
     "name": "Milanesas con guarnición para dos",
     "category": "Milanesas",
-    "description": "",
+    "description": "Porción de milanesas con guarnición para compartir entre dos personas.",
     "price": 22000,
     "unit": ""
   },
@@ -681,7 +681,7 @@ export const products=[
     "id": "orderar-900",
     "name": "Bastones de Pollo con Guarnición de Papas",
     "category": "Bastones de pollo",
-    "description": "",
+    "description": "Bastones de pollo rebozados acompañados de papas fritas.",
     "price": 10000,
     "unit": "",
     "provisionalPrice": true
