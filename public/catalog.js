@@ -5,11 +5,6 @@ const chosenFlavors=new Map();
 const muzzarella = {file: 'pizza-muzzarella', width: 1086, title: 'Pizza de muzzarella'};
 const napolitana = {file: 'pizza-napolitana', width: 1086, title: 'Pizza napolitana'};
 const productPhotos = new Map([
-  ['orderar-1', muzzarella],
-  ['orderar-2', muzzarella],
-  ['orderar-3', napolitana],
-  ['orderar-4', napolitana],
-  ['orderar-5', muzzarella],
   ['orderar-100', muzzarella],
   ['orderar-107', napolitana],
   ['orderar-700', {file: 'empanadas-abiertas', width: 1300, title: 'Empanadas de carne'}],
@@ -26,15 +21,13 @@ photoDialog.addEventListener('click', event => {
 });
 
 function productThumbnail(product, photo) {
-  const title = product.category === 'Promociones'
-    ? `${photo.title} incluida en la promo`
-    : photo.title;
+  const title = photo.illustrative ? `${photo.title} · Imagen ilustrativa` : photo.title;
   const button = element('button', '', 'product-thumbnail');
   button.type = 'button';
   button.setAttribute('aria-label', `Ampliar foto de ${product.name}`);
   button.setAttribute('aria-haspopup', 'dialog');
   const thumbnail = element('img');
-  thumbnail.src = `assets/${photo.file}-160.webp`;
+  thumbnail.src = photo.illustrative ? photo.src : `assets/${photo.file}-160.webp`;
   thumbnail.alt = '';
   thumbnail.width = 160;
   thumbnail.height = 160;
@@ -44,7 +37,7 @@ function productThumbnail(product, photo) {
     photoDialog.querySelector('h2').textContent = title;
     const fullPhoto = element('img', '', 'menu-photo-full');
     fullPhoto.alt = photo.title;
-    fullPhoto.src = `assets/${photo.file}-${photo.width}.webp`;
+    fullPhoto.src = photo.illustrative ? photo.src : `assets/${photo.file}-${photo.width}.webp`;
     photoDialog.querySelector('.menu-photo-body').replaceChildren(fullPhoto);
     photoDialog.showModal();
   });
@@ -70,7 +63,12 @@ export function drawProducts({cart,flavors,category,changed}){
       b.setAttribute('aria-label',`${delta>0?'Sumar':'Restar'} ${p.name}`);b.disabled=delta<0?!(cart[p.id]>0):cart[p.id]>=99;
       b.addEventListener('click',()=>{cart[p.id]=Math.min(99,Math.max(0,(cart[p.id]||0)+delta));if(!cart[p.id])delete flavors[p.id];changed();});quantity.append(b);
     }
-    const photo = productPhotos.get(p.id);
+    const photo = p.category === 'Promociones' ? undefined : productPhotos.get(p.id) ?? {
+      title: p.name,
+      src: `assets/menu-photos/${p.id}.webp`,
+      illustrative: true,
+    };
+    if (photo?.illustrative) copy.append(element('small', 'Imagen ilustrativa', 'product-photo-note'));
     if (photo) {
       const details = element('div', '', 'product-details');
       details.append(productThumbnail(p, photo), copy);

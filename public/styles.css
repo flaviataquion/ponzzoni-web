@@ -70,6 +70,7 @@
 }
 
 .product-thumbnail img { width: 100%; height: 100%; object-fit: cover; }
+.product-photo-note { display: block; color: var(--muted); font-size: 11px; margin-top: 4px; }
 
 dialog.menu-photo-dialog {
   width: min(760px, calc(100% - 24px));
