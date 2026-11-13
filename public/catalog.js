@@ -5,6 +5,7 @@ const chosenFlavors=new Map();
 const muzzarella = {file: 'pizza-muzzarella', width: 1086, title: 'Pizza de muzzarella'};
 const napolitana = {file: 'pizza-napolitana', width: 1086, title: 'Pizza napolitana'};
 const productPhotos = new Map([
+  ['orderar-300', {src: 'assets/menu-photos/orderar-300.webp', title: 'Pizza Ponzzoni'}],
   ['orderar-100', muzzarella],
   ['orderar-107', napolitana],
   ['orderar-700', {file: 'empanadas-abiertas', width: 1300, title: 'Empanadas de carne'}],
@@ -27,7 +28,7 @@ function productThumbnail(product, photo) {
   button.setAttribute('aria-label', `Ampliar foto de ${product.name}`);
   button.setAttribute('aria-haspopup', 'dialog');
   const thumbnail = element('img');
-  thumbnail.src = photo.illustrative ? photo.src : `assets/${photo.file}-160.webp`;
+  thumbnail.src = photo.src ?? `assets/${photo.file}-160.webp`;
   thumbnail.alt = '';
   thumbnail.width = 160;
   thumbnail.height = 160;
@@ -37,7 +38,7 @@ function productThumbnail(product, photo) {
     photoDialog.querySelector('h2').textContent = title;
     const fullPhoto = element('img', '', 'menu-photo-full');
     fullPhoto.alt = photo.title;
-    fullPhoto.src = photo.illustrative ? photo.src : `assets/${photo.file}-${photo.width}.webp`;
+    fullPhoto.src = photo.src ?? `assets/${photo.file}-${photo.width}.webp`;
     photoDialog.querySelector('.menu-photo-body').replaceChildren(fullPhoto);
     photoDialog.showModal();
   });
