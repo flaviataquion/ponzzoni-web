@@ -5,7 +5,7 @@ export const menuSource={
   "excludedCategories": [
     "Comidas Peruanas"
   ],
-  "notes": "Los adicionales de $0 son opciones de sabores, no productos independientes. Los precios de las milanesas y del sánguche fueron confirmados por el comercio el 2026-11-11. El precio de los bastones de pollo sigue siendo provisorio."
+  "notes": "Los adicionales de $0 son opciones de sabores, no productos independientes. Los precios de las milanesas y del sánguche fueron confirmados por el comercio el 2026-11-11. El comercio confirmó el precio de los bastones de pollo."
 };
 export const categories=["Promociones", "Pizzas clásicas", "Pizzas especiales", "Pizzas rellenas", "Empanadas", "Calzones", "Sandwiches", "Fainá", "Milanesas", "Bastones de pollo"];
 export const products=[
@@ -682,9 +682,8 @@ export const products=[
     "name": "Bastones de Pollo con Guarnición de Papas",
     "category": "Bastones de pollo",
     "description": "Bastones de pollo rebozados acompañados de papas fritas.",
-    "price": 10000,
-    "unit": "",
-    "provisionalPrice": true
+    "price": 15000,
+    "unit": ""
   }
 ];
 export const empanadaFlavors=[
