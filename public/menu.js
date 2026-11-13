@@ -103,7 +103,7 @@ export const products=[
     "id": "orderar-106",
     "name": "Jamón y Huevo",
     "category": "Pizzas clásicas",
-    "description": "Pizza con jamón y huevo.",
+    "description": "Pizza con jamón y huevo picado.",
     "price": 20000,
     "unit": ""
   },
@@ -223,7 +223,7 @@ export const products=[
     "id": "orderar-201",
     "name": "Bacon",
     "category": "Pizzas especiales",
-    "description": "Muzzarella, provolone, panceta, huevo",
+    "description": "Muzzarella, provolone, panceta, huevo picado",
     "price": 22000,
     "unit": ""
   },
@@ -271,7 +271,7 @@ export const products=[
     "id": "orderar-207",
     "name": "Primavera",
     "category": "Pizzas especiales",
-    "description": "Muzzarella, jamón, tomate en rodajas, huevo",
+    "description": "Muzzarella, jamón, tomate en rodajas, huevo picado",
     "price": 22000,
     "unit": ""
   },
@@ -295,7 +295,7 @@ export const products=[
     "id": "orderar-210",
     "name": "Gran Bacon",
     "category": "Pizzas especiales",
-    "description": "Muzzarella, panceta, barbacoa, huevo frito, provolone",
+    "description": "Muzzarella, panceta, barbacoa, huevo picado, provolone",
     "price": 22500,
     "unit": ""
   },
@@ -303,7 +303,7 @@ export const products=[
     "id": "orderar-300",
     "name": "Ponzzoni",
     "category": "Pizzas especiales",
-    "description": "Muzzarella, jamón, huevo y morrón. Bordes rellenos con salchichas",
+    "description": "Muzzarella, jamón, huevo picado y morrón. Bordes rellenos con salchichas",
     "price": 22000,
     "unit": ""
   },
