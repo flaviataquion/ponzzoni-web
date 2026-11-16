@@ -64,9 +64,10 @@ export function drawProducts({cart,flavors,category,changed}){
       b.setAttribute('aria-label',`${delta>0?'Sumar':'Restar'} ${p.name}`);b.disabled=delta<0?!(cart[p.id]>0):cart[p.id]>=99;
       b.addEventListener('click',()=>{cart[p.id]=Math.min(99,Math.max(0,(cart[p.id]||0)+delta));if(!cart[p.id])delete flavors[p.id];changed();});quantity.append(b);
     }
-    const photo = p.category === 'Promociones' ? undefined : productPhotos.get(p.id) ?? {
+    const photoId = p.photoId ?? p.id;
+    const photo = p.category === 'Promociones' || p.photoId === null ? undefined : productPhotos.get(photoId) ?? {
       title: p.name,
-      src: `assets/menu-photos/${p.id}.webp`,
+      src: `assets/menu-photos/${photoId}.webp`,
       illustrative: true,
     };
     if (photo?.illustrative) copy.append(element('small', 'Imagen ilustrativa', 'product-photo-note'));

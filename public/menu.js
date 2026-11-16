@@ -14,7 +14,7 @@ export const products=[
     "name": "1 Muzzarella Grande + Media Docena de Empanadas",
     "category": "Promociones",
     "description": "",
-    "price": 28000,
+    "price": 29000,
     "unit": "",
     "flavorCount": 6
   },
@@ -28,10 +28,10 @@ export const products=[
   },
   {
     "id": "orderar-3",
-    "name": "1 Napolitana Grande + 1 Muzzarella Grande + Media Docena de Empanadas",
+    "name": "1 Muzzarella Grande + 1 Napolitana Grande + Media Docena de Empanadas",
     "category": "Promociones",
     "description": "",
-    "price": 43000,
+    "price": 44000,
     "unit": "",
     "flavorCount": 6
   },
@@ -80,7 +80,7 @@ export const products=[
     "name": "Fugazza",
     "category": "Pizzas clásicas",
     "description": "Pizza clásica de cebolla.",
-    "price": 15500,
+    "price": 14000,
     "unit": ""
   },
   {
@@ -128,7 +128,7 @@ export const products=[
     "name": "Calabresa",
     "category": "Pizzas clásicas",
     "description": "Pizza al estilo calabrés, de sabor intenso.",
-    "price": 20500,
+    "price": 21000,
     "unit": ""
   },
   {
@@ -136,15 +136,15 @@ export const products=[
     "name": "Palmitos",
     "category": "Pizzas clásicas",
     "description": "Pizza con palmitos.",
-    "price": 22000,
+    "price": 24000,
     "unit": ""
   },
   {
     "id": "orderar-111",
-    "name": "Champignon",
+    "name": "Champiñones",
     "category": "Pizzas clásicas",
     "description": "Pizza con champiñones.",
-    "price": 21000,
+    "price": 24000,
     "unit": ""
   },
   {
@@ -184,7 +184,7 @@ export const products=[
     "name": "Espinaca",
     "category": "Pizzas clásicas",
     "description": "Pizza con espinaca.",
-    "price": 19500,
+    "price": 21000,
     "unit": ""
   },
   {
@@ -192,7 +192,7 @@ export const products=[
     "name": "Caprese",
     "category": "Pizzas clásicas",
     "description": "Pizza inspirada en los sabores de la ensalada caprese.",
-    "price": 18500,
+    "price": 20000,
     "unit": ""
   },
   {
@@ -200,7 +200,7 @@ export const products=[
     "name": "Cuatro Quesos",
     "category": "Pizzas clásicas",
     "description": "Pizza con una combinación de cuatro quesos.",
-    "price": 20500,
+    "price": 22000,
     "unit": ""
   },
   {
@@ -216,7 +216,7 @@ export const products=[
     "name": "Rúcula y Panceta",
     "category": "Pizzas especiales",
     "description": "Muzzarella, panceta, rúcula",
-    "price": 22000,
+    "price": 24000,
     "unit": ""
   },
   {
@@ -240,7 +240,7 @@ export const products=[
     "name": "Capricciosa",
     "category": "Pizzas especiales",
     "description": "Muzzarella, panceta, champignones, morrón",
-    "price": 22000,
+    "price": 24000,
     "unit": ""
   },
   {
@@ -248,7 +248,7 @@ export const products=[
     "name": "Cheddar y Panceta",
     "category": "Pizzas especiales",
     "description": "Muzzarella, cheddar, panceta",
-    "price": 22000,
+    "price": 24000,
     "unit": ""
   },
   {
@@ -256,7 +256,7 @@ export const products=[
     "name": "Hawaiana",
     "category": "Pizzas especiales",
     "description": "Muzzarella, jamón, rodajas de ananá",
-    "price": 22000,
+    "price": 24000,
     "unit": ""
   },
   {
@@ -264,7 +264,7 @@ export const products=[
     "name": "Verdeo",
     "category": "Pizzas especiales",
     "description": "Muzzarella, provolone, verdeo fileteado",
-    "price": 19500,
+    "price": 20000,
     "unit": ""
   },
   {
@@ -280,15 +280,7 @@ export const products=[
     "name": "Rúcula y Jamón Crudo",
     "category": "Pizzas especiales",
     "description": "Muzzarella, fetas de jamón crudo, rúcula",
-    "price": 23000,
-    "unit": ""
-  },
-  {
-    "id": "orderar-209",
-    "name": "Jamón Crudo y Ananá",
-    "category": "Pizzas especiales",
-    "description": "Muzzarella, fetas de jamón crudo, ananá en rodajas",
-    "price": 23000,
+    "price": 24000,
     "unit": ""
   },
   {
@@ -296,7 +288,7 @@ export const products=[
     "name": "Gran Bacon",
     "category": "Pizzas especiales",
     "description": "Muzzarella, panceta, barbacoa, huevo picado, provolone",
-    "price": 22500,
+    "price": 24000,
     "unit": ""
   },
   {
@@ -304,12 +296,12 @@ export const products=[
     "name": "Ponzzoni",
     "category": "Pizzas especiales",
     "description": "Muzzarella, jamón, huevo picado y morrón. Bordes rellenos con salchichas",
-    "price": 22000,
+    "price": 26000,
     "unit": ""
   },
   {
     "id": "orderar-400",
-    "name": "Rellena Fugazza",
+    "name": "Fugazza Rellena",
     "category": "Pizzas rellenas",
     "description": "Pizza rellena al estilo fugazza, con cebolla.",
     "price": 20000,
@@ -317,26 +309,26 @@ export const products=[
   },
   {
     "id": "orderar-401",
-    "name": "Fugazza con jamón",
+    "name": "Fugazza Rellena con Jamón",
     "category": "Pizzas rellenas",
     "description": "Fugazza rellena con cebolla y jamón.",
-    "price": 21500,
-    "unit": ""
-  },
-  {
-    "id": "orderar-402",
-    "name": "Fugazza con provolone",
-    "category": "Pizzas rellenas",
-    "description": "Fugazza rellena con cebolla y queso provolone.",
     "price": 22000,
     "unit": ""
   },
   {
+    "id": "orderar-402",
+    "name": "Fugazza Rellena con Provolone",
+    "category": "Pizzas rellenas",
+    "description": "Fugazza rellena con cebolla y queso provolone.",
+    "price": 24000,
+    "unit": ""
+  },
+  {
     "id": "orderar-403",
-    "name": "Fugazza americana",
+    "name": "Fugazza Rellena Americana",
     "category": "Pizzas rellenas",
     "description": "Pizza rellena de la línea fugazza, en la versión americana de Ponzzoni.",
-    "price": 23000,
+    "price": 26000,
     "unit": ""
   },
   {
@@ -372,14 +364,6 @@ export const products=[
     "unit": ""
   },
   {
-    "id": "orderar-504",
-    "name": "Calzone Francés",
-    "category": "Calzones",
-    "description": "Masa de pizza doblada con el relleno Francés de la casa.",
-    "price": 22000,
-    "unit": ""
-  },
-  {
     "id": "orderar-505",
     "name": "Calzone Bacon",
     "category": "Calzones",
@@ -389,7 +373,7 @@ export const products=[
   },
   {
     "id": "orderar-600",
-    "name": "Faina Simple",
+    "name": "Fainá Simple",
     "category": "Fainá",
     "description": "Porción clásica a base de harina de garbanzos, para acompañar la pizza.",
     "price": 2000,
@@ -397,10 +381,10 @@ export const products=[
   },
   {
     "id": "orderar-601",
-    "name": "Faina con Jamón",
+    "name": "Fainá con Jamón",
     "category": "Fainá",
     "description": "Fainá a base de harina de garbanzos con jamón.",
-    "price": 2500,
+    "price": 3000,
     "unit": ""
   },
   {
@@ -408,7 +392,7 @@ export const products=[
     "name": "Fugafaina",
     "category": "Fainá",
     "description": "Fainá al estilo fugazza, con cebolla.",
-    "price": 2500,
+    "price": 3000,
     "unit": ""
   },
   {
@@ -647,35 +631,89 @@ export const products=[
   },
   {
     "id": "orderar-800",
-    "name": "Sánguche de milanesa",
+    "name": "Sándwich de Milanesa con Papas Fritas – Individual",
     "category": "Sandwiches",
-    "description": "Milanesa con jamón, queso, tomate y lechuga en pan casero.",
+    "description": "Milanesa con jamón, queso, tomate y lechuga en pan casero. Incluye papas fritas.",
     "price": 12000,
+    "unit": ""
+  },
+  {
+    "id": "sandwich-milanesa-compartir",
+    "name": "Sándwich de Milanesa con Papas Fritas – Para Compartir",
+    "category": "Sandwiches",
+    "description": "Milanesa con jamón, queso, tomate y lechuga en pan casero. Incluye papas fritas.",
+    "price": 20000,
+    "unit": "",
+    "photoId": "orderar-800"
+  },
+  {
+    "id": "milanesa-simple-individual",
+    "name": "Milanesa Simple + Papas Fritas – Individual",
+    "category": "Milanesas",
+    "description": "Incluye papas fritas y dips de aderezos. Puede ser de carne o de pollo. Aclaralo por WhatsApp al hacer el pedido.",
+    "price": 12000,
+    "unit": "",
+    "photoId": "orderar-801"
+  },
+  {
+    "id": "orderar-801",
+    "name": "Milanesa Simple + Papas Fritas – Para Compartir",
+    "category": "Milanesas",
+    "description": "Incluye papas fritas y dips de aderezos. Puede ser de carne o de pollo. Aclaralo por WhatsApp al hacer el pedido.",
+    "price": 20000,
     "unit": ""
   },
   {
     "id": "milanesa-napolitana-individual",
-    "name": "Milanesa napolitana con guarnición",
+    "name": "Milanesa Napolitana + Papas Fritas – Individual",
     "category": "Milanesas",
-    "description": "Milanesa al estilo napolitano, acompañada de guarnición.",
+    "description": "Incluye papas fritas y dips de aderezos. Puede ser de carne o de pollo. Aclaralo por WhatsApp al hacer el pedido.",
     "price": 12000,
-    "unit": "Porción individual"
+    "unit": ""
+  },
+  {
+    "id": "milanesa-napolitana-compartir",
+    "name": "Milanesa Napolitana + Papas Fritas – Para Compartir",
+    "category": "Milanesas",
+    "description": "Incluye papas fritas y dips de aderezos. Puede ser de carne o de pollo. Aclaralo por WhatsApp al hacer el pedido.",
+    "price": 20000,
+    "unit": "",
+    "photoId": "milanesa-napolitana-individual"
   },
   {
     "id": "milanesa-jamon-queso-individual",
-    "name": "Milanesa de jamón y queso con guarnición",
+    "name": "Milanesa con Jamón y Queso + Papas Fritas – Individual",
     "category": "Milanesas",
-    "description": "Milanesa con jamón y queso, acompañada de guarnición.",
+    "description": "Incluye papas fritas y dips de aderezos. Puede ser de carne o de pollo. Aclaralo por WhatsApp al hacer el pedido.",
     "price": 12000,
-    "unit": "Porción individual"
+    "unit": ""
   },
   {
-    "id": "orderar-801",
-    "name": "Milanesas con guarnición para dos",
+    "id": "milanesa-jamon-queso-compartir",
+    "name": "Milanesa con Jamón y Queso + Papas Fritas – Para Compartir",
     "category": "Milanesas",
-    "description": "Porción de milanesas con guarnición para compartir entre dos personas.",
+    "description": "Incluye papas fritas y dips de aderezos. Puede ser de carne o de pollo. Aclaralo por WhatsApp al hacer el pedido.",
+    "price": 20000,
+    "unit": "",
+    "photoId": "milanesa-jamon-queso-individual"
+  },
+  {
+    "id": "milanesa-cheddar-panceta-individual",
+    "name": "Milanesa con Cheddar y Panceta + Papas Fritas – Individual",
+    "category": "Milanesas",
+    "description": "Incluye papas fritas, pan casero y dips de aderezos. Puede ser de carne o de pollo. Aclaralo por WhatsApp al hacer el pedido.",
+    "price": 13000,
+    "unit": "",
+    "photoId": null
+  },
+  {
+    "id": "milanesa-cheddar-panceta-compartir",
+    "name": "Milanesa con Cheddar y Panceta + Papas Fritas – Para Compartir",
+    "category": "Milanesas",
+    "description": "Incluye papas fritas, pan casero y dips de aderezos. Puede ser de carne o de pollo. Aclaralo por WhatsApp al hacer el pedido.",
     "price": 22000,
-    "unit": ""
+    "unit": "",
+    "photoId": null
   },
   {
     "id": "orderar-900",
