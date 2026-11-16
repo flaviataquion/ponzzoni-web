@@ -39,8 +39,6 @@
   align-items: center;
   gap: clamp(24px, 5vw, 64px);
   padding: clamp(28px, 5vw, 56px) clamp(16px, 4vw, 32px);
-  border: 1px solid #ddd3c6;
-  border-radius: 4px;
   background: #fff3df;
   color: var(--padrino-ink);
 }
