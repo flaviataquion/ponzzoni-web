@@ -300,6 +300,14 @@ export const products=[
     "unit": ""
   },
   {
+    "id": "cochina",
+    "name": "Cochina",
+    "category": "Pizzas especiales",
+    "description": "Muzzarella, papas fritas, panceta, cheddar, morrón y huevo frito.",
+    "price": 26000,
+    "unit": ""
+  },
+  {
     "id": "orderar-400",
     "name": "Fugazza Rellena",
     "category": "Pizzas rellenas",

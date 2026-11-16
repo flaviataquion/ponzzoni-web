@@ -31,24 +31,37 @@
 .review-source { color: var(--muted); font-weight: 400; }
 
 .padrino-promo {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 24px;
-  padding: clamp(24px, 5vw, 56px);
-  border-radius: var(--radius);
-  background: var(--ink);
-  color: var(--cream);
+  --padrino-red: #dc0212;
+  --padrino-ink: #212120;
+  display: grid;
+  justify-items: center;
+  gap: 16px;
+  padding: clamp(28px, 5vw, 56px) clamp(16px, 4vw, 32px);
+  border: 1px solid #ddd3c6;
+  border-radius: 4px;
+  background: #fff3df;
+  color: var(--padrino-ink);
+  text-align: center;
 }
 
-.padrino-promo .eyebrow { margin-bottom: 8px; }
-.padrino-promo h2 { margin: 0; }
-.padrino-promo .button { max-width: 100%; text-align: center; }
-
-@media (max-width: 767px) {
-  .padrino-promo .button { width: 100%; }
+.padrino-promo h2 {
+  margin: 0;
+  font: 400 clamp(1.8rem, 4vw, 2.8rem)/1.1 Georgia, serif;
+  text-wrap: balance;
 }
+
+.padrino-logo { display: block; width: clamp(176px, 30vw, 260px); height: auto; }
+.padrino-promo .padrino-link {
+  max-width: 100%;
+  padding: 10px 23px;
+  border-radius: 4px;
+  background: var(--padrino-red);
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: normal;
+  text-transform: none;
+}
+.padrino-promo .padrino-link:hover { background: var(--padrino-ink); }
 
 .product-details {
   display: flex;

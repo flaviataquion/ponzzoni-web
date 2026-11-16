@@ -5,6 +5,7 @@ const chosenFlavors=new Map();
 const muzzarella = {file: 'pizza-muzzarella', width: 1086, title: 'Pizza de muzzarella'};
 const napolitana = {file: 'pizza-napolitana', width: 1086, title: 'Pizza napolitana'};
 const productPhotos = new Map([
+  ['cochina', {src: 'assets/menu-photos/cochina.webp', title: 'Pizza Cochina'}],
   ['orderar-300', {src: 'assets/menu-photos/orderar-300.webp', title: 'Pizza Ponzzoni'}],
   ['orderar-100', muzzarella],
   ['orderar-107', napolitana],
