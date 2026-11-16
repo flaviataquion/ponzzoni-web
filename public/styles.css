@@ -34,14 +34,21 @@
   --padrino-red: #dc0212;
   --padrino-ink: #212120;
   display: grid;
-  justify-items: center;
-  gap: 16px;
+  grid-template-columns: minmax(0, 260px) minmax(0, 440px);
+  justify-content: center;
+  align-items: center;
+  gap: clamp(24px, 5vw, 64px);
   padding: clamp(28px, 5vw, 56px) clamp(16px, 4vw, 32px);
   border: 1px solid #ddd3c6;
   border-radius: 4px;
   background: #fff3df;
   color: var(--padrino-ink);
-  text-align: center;
+}
+
+.padrino-copy {
+  display: grid;
+  justify-items: start;
+  gap: 16px;
 }
 
 .padrino-promo h2 {
@@ -50,7 +57,20 @@
   text-wrap: balance;
 }
 
-.padrino-logo { display: block; width: clamp(176px, 30vw, 260px); height: auto; }
+.padrino-logo {
+  display: block;
+  justify-self: center;
+  width: 100%;
+  max-width: 260px;
+  height: auto;
+}
+
+@media (max-width: 600px) {
+  .padrino-promo { grid-template-columns: minmax(0, 440px); gap: 12px; }
+  .padrino-logo { max-width: 180px; }
+  .padrino-copy { justify-items: center; text-align: center; }
+}
+
 .padrino-promo .padrino-link {
   max-width: 100%;
   padding: 10px 23px;
