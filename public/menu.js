@@ -7,7 +7,7 @@ export const menuSource={
   ],
   "notes": "Los adicionales de $0 son opciones de sabores, no productos independientes. Los precios de las milanesas y del sánguche fueron confirmados por el comercio el 2026-11-11. El comercio confirmó el precio de los bastones de pollo."
 };
-export const categories=["Promociones", "Pizzas clásicas", "Pizzas especiales", "Pizzas rellenas", "Empanadas", "Calzones", "Sandwiches", "Fainá", "Milanesas", "Bastones de pollo"];
+export const categories=["Promociones", "Pizzas clásicas", "Pizzas especiales", "Pizzas rellenas", "Calzones", "Empanadas", "Fainá", "Milanesas", "Sandwiches", "Bastones de pollo"];
 export const products=[
   {
     "id": "orderar-1",
